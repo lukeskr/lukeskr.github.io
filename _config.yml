@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Lucchas Ribeiro Skreinig"
   pronouns         : "he/him" # example: "she/her"  
-  bio              : "Mixed reality researcher and software engineer working on interactive instructional systems, real-time applications and computer vision."
+  bio              : "Mixed reality researcher and software engineer working on interactive mixed reality instructional systems."
   location         : "Adelaide, SA, Australia"
   employer         : "Graz University of Technology"
   uri              : # URL
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/lucchas-ribeiroskreinig/"
+  linkedin         : "lucchas-ribeiroskreinig"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

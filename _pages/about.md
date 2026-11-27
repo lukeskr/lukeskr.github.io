@@ -7,15 +7,17 @@ redirect_from:
   - /about.html
 ---
 
-I am a mixed reality researcher and software engineer specialising in interactive instructional systems, real-time applications, computer vision and computer graphics.
+I am a computer science researcher and software engineer specializing in mixed reality, interactive systems, computer vision and computer graphics. I have extensive experience designing and implementing research systems, translating research ideas into functional prototypes, and evaluating technical approaches through research demonstrations and user studies.
 
-I turn applied research ideas into functional prototypes and evaluate them through demonstrations and user studies. My recent work spans immersive tutorial authoring, AR guidance and adaptive instruction.
+My work combines practical software engineering with applied research, with a focus on interactive instructional systems, real-time applications and the presentation and authoring of procedures. I have contributed as first author and co-author to peer-reviewed publications at leading venues in mixed and augmented reality, and collaborated with international, multidisciplinary research teams.
 
 Research interests
-======
-- Augmented and virtual reality
-- Interactive tutorial authoring and guidance
-- Mixed reality instructional systems
-- Real-time rendering
-- Computer vision and camera tracking
-- Human-computer interaction
+====== 
+- Mixed reality and augmented reality systems
+- Interactive instructional and procedural guidance
+- Human-computer interaction and immersive interaction
+- Computer vision and real-time perception
+- Computer graphics and 3D interaction
+- Research software engineering and prototyping
+- AI-assisted interactive systems
+ 
