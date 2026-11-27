@@ -19,6 +19,10 @@ layout: compress
     {{ content }}
 
     <div class="page__footer">
+      <button class="page__footer-toggle" type="button" aria-expanded="true" aria-controls="footer-panel">
+        <span>Hide footer</span>
+        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+      </button>
       <footer>
         {% include footer/custom.html %}
         {% include footer.html %}
@@ -26,6 +30,29 @@ layout: compress
     </div>
 
     {% include scripts.html %}
+
+    <script>
+      (function () {
+        var footer = document.querySelector(".page__footer");
+        var toggle = document.querySelector(".page__footer-toggle");
+        if (!footer || !toggle) return;
+
+        var expanded = localStorage.getItem("footerExpanded") !== "false";
+        footer.classList.toggle("is-collapsed", !expanded);
+        toggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+        var label = toggle.querySelector("span");
+        if (label) label.textContent = expanded ? "Hide footer" : "Show footer";
+
+        toggle.addEventListener("click", function () {
+          var isExpanded = toggle.getAttribute("aria-expanded") === "true";
+          var nextExpanded = !isExpanded;
+          footer.classList.toggle("is-collapsed", !nextExpanded);
+          toggle.setAttribute("aria-expanded", nextExpanded ? "true" : "false");
+          if (label) label.textContent = nextExpanded ? "Hide footer" : "Show footer";
+          localStorage.setItem("footerExpanded", nextExpanded ? "true" : "false");
+        });
+      }());
+    </script>
 
   </body>
 </html>

@@ -5,12 +5,17 @@ permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+{% assign invited_talks = site.talks | where: "type", "Invited talk" | sort: "date" | reverse %}
+{% assign conference_talks = site.talks | where_exp: "post", "post.type != 'Invited talk'" | sort: "date" | reverse %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<h2>Invited talks</h2>
+{% for post in invited_talks %}
+  {% include archive-single-talk.html %}
+{% else %}
+  <p>Invited talks will appear here.</p>
+{% endfor %}
 
-{% endif %}
-
-{% for post in site.talks reversed %}
+<h2>Conference presentations</h2>
+{% for post in conference_talks %}
   {% include archive-single-talk.html %}
 {% endfor %}

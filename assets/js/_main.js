@@ -168,6 +168,26 @@ $(document).ready(function () {
     $("body").css("padding-bottom", "0");
     $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
   }
+
+  var footerToggle = $(".page__footer-toggle");
+  var footer = $(".page__footer");
+  var footerExpanded = localStorage.getItem("footerExpanded") !== "false";
+
+  if (!footerExpanded) {
+    footer.addClass("is-collapsed");
+  }
+  footerToggle.attr("aria-expanded", footerExpanded ? "true" : "false");
+  footerToggle.find("span").text(footerExpanded ? "Hide footer" : "Show footer");
+  bumpIt();
+
+  footerToggle.on("click", function () {
+    var expanded = footerToggle.attr("aria-expanded") === "true";
+    footerToggle.attr("aria-expanded", expanded ? "false" : "true");
+    footerToggle.find("span").text(expanded ? "Show footer" : "Hide footer");
+    footer.toggleClass("is-collapsed", expanded);
+    localStorage.setItem("footerExpanded", expanded ? "false" : "true");
+    bumpIt();
+  });
   $(window).resize(function () {
     didResize = true;
   });
