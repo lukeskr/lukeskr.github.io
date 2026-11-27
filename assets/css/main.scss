@@ -45,9 +45,9 @@
 
 .publication-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-  max-width: 48rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 42rem;
   margin: 1.25rem 0 2.5rem;
 }
 
@@ -67,10 +67,11 @@
 }
 
 .publication-card .archive__item-teaser {
-  height: 10rem;
+  height: 9rem;
   margin: 0 0 0.85rem;
+  padding: 0.4rem;
   border-radius: 0;
-  background: var(--global-code-background-color);
+  background: var(--global-footer-bg-color);
 }
 
 .publication-card .archive__item-teaser a,
@@ -81,7 +82,7 @@
 }
 
 .publication-card .archive__item-teaser img {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .publication-card .archive__item-title,
