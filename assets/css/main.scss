@@ -52,7 +52,7 @@
 }
 
 .publication-card {
-  width: auto;
+  min-width: 0;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -67,7 +67,8 @@
 }
 
 .publication-card .archive__item-teaser {
-  height: 9rem;
+  aspect-ratio: 16 / 9;
+  height: auto;
   margin: 0 0 0.85rem;
   padding: 0.4rem;
   border-radius: 0;

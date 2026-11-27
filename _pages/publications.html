@@ -23,7 +23,7 @@ author_profile: true
         <div class="publication-grid">
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html type="grid" %}
+      {% include archive-single.html type="publication" %}
     {% endfor %}
     {% if title_shown %}
       </div>
@@ -31,7 +31,7 @@ author_profile: true
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html type="grid" %}
+    {% include archive-single.html type="publication" %}
   {% endfor %}
 {% endif %}
 
