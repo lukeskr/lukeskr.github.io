@@ -52,12 +52,20 @@
     <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}<p><strong><a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a></strong></p></div>
     {% endif %}
     
-    {% include /components/citations.html
-        citation=post.citation
-        paperurl=post.paperurl
-        slidesurl=post.slidesurl
-        bibtexurl=post.bibtexurl
-    %}    
+    {% if include.type != "grid" %}
+      {% include /components/citations.html
+          citation=post.citation
+          paperurl=post.paperurl
+          slidesurl=post.slidesurl
+          bibtexurl=post.bibtexurl
+      %}
+    {% else %}
+      {% include /components/citations.html
+          paperurl=post.paperurl
+          slidesurl=post.slidesurl
+          bibtexurl=post.bibtexurl
+      %}
+    {% endif %}
 
   </article>
 </div>

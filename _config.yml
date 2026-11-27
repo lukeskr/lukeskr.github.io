@@ -8,11 +8,11 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "mint" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Lucchas Ribeiro Skreinig / Computer Science Researcher"
+site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+title                    : "Lucchas Ribeiro Skreinig"
 title_separator          : "-"
 name                     : &name "Lucchas Ribeiro Skreinig"
-description              : &description "Lucchas' academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Research in mixed reality, interactive systems, computer vision and computer graphics"
 url                      : https://lukeskr.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -21,15 +21,12 @@ repository               : "lukeskr/lukeskr.github.io"
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
-# Computer science researcher and software engineer specialising in mixed reality, interactive systems, computer vision and computer graphics. Experienced in independently conceiving, designing and implementing research systems, translating research ideas into functional prototypes, and evaluating technical approaches through research demonstrations and user studies.
-# My work combines practical software engineering with applied research, with a particular focus on interactive instructional systems, real-time applications and novel approaches to presenting and authoring procedural information. I have contributed as first author and co-author to peer-reviewed publications at leading venues in mixed and augmented reality, and have collaborated with international, multidisciplinary research teams.
-# I am particularly interested in research environments that combine technical innovation, experimental development and collaboration across disciplines.
 author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Lucchas Ribeiro Skreinig"
   pronouns         : "he/him" # example: "she/her"  
-  bio              : "I am a computer science researcher and software engineer specialising in mixed reality, interactive systems, computer vision and computer graphics. Experienced in independently conceiving, designing and implementing research systems, translating research ideas into functional prototypes, and evaluating technical approaches through research demonstrations and user studies. My work combines practical software engineering with applied research, with a particular focus on interactive instructional systems, real-time applications and novel approaches to presenting and authoring procedural information. I have contributed as first author and co-author to peer-reviewed publications at leading venues in mixed and augmented reality, and have collaborated with international, multidisciplinary research teams. I am particularly interested in research environments that combine technical innovation, experimental development and collaboration across disciplines."
+  bio              : "Mixed reality researcher and software engineer working on interactive instructional systems, real-time applications and computer vision."
   location         : "Adelaide, SA, Australia"
   employer         : "Graz University of Technology"
   uri              : # URL
@@ -87,12 +84,10 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+  first_author:
+    title: 'First-author publications'
+  co_author:
+    title: 'Co-authored publications'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -147,7 +142,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 : og-image.png   # Social media default site image (lives in /images/)
-og_description           :  # Social media default site image description
+og_description           : "Mixed reality, augmented reality and computer vision research"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

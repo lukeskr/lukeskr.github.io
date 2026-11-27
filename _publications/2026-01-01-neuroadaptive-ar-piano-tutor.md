@@ -1,9 +1,11 @@
 ---
 title: "Towards a Neuroadaptive Augmented Reality Piano Tutor: Opportunities and Challenges"
 collection: publications
-category: manuscripts
+category: co_author
 permalink: /publication/neuroadaptive-ar-piano-tutor
 link: 'https://immersive-technology-lab.github.io/projects/neuropiano/index.html'
+header:
+  teaser: 'https://immersive-technology-lab.github.io/assets/images/selected/wriessnegger_vr26.jpg'
 date: 2026-01-01
 venue: 'Virtual Reality'
 paperurl: 'https://link.springer.com/article/10.1007/s10055-026-01412-4'

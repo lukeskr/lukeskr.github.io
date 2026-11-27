@@ -1,9 +1,11 @@
 ---
 title: "Expertise-based Adaptive AR Instructions with Motion Data"
 collection: publications
-category: conferences
+category: co_author
 permalink: /publication/expertise-based-adaptive-ar-instructions-motion-data
 link: 'https://immersive-technology-lab.github.io/projects/expertisedetection/index.html'
+header:
+  teaser: 'https://immersive-technology-lab.github.io/assets/images/selected/kaimel_ismara26.jpg'
 date: 2026-01-01
 venue: 'IEEE International Symposium on Mixed and Augmented Reality Abstracts and Workshops (ISMAR-Adjunct)'
 paperurl: 'https://immersive-technology-lab.github.io/projects/expertisedetection/assets/kaimel_ismara26_poster.pdf'
