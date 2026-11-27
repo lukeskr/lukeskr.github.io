@@ -146,7 +146,8 @@
   padding: 1.25rem 1.5rem;
   border-left: 4px solid var(--global-link-color);
   border-radius: 0 0.5rem 0.5rem 0;
-  background: var(--global-code-background-color);
+  background: var(--global-footer-bg-color);
+  color: var(--global-text-color);
 }
 
 .cv-intro p {
@@ -277,7 +278,7 @@
   margin: 0.25rem 0.25rem 0 0;
   padding: 0.28rem 0.48rem;
   border-radius: 999px;
-  background: var(--global-code-background-color);
+  background: var(--global-footer-bg-color);
   color: var(--global-text-color);
   font-size: 0.78rem;
   line-height: 1.2;
@@ -320,7 +321,7 @@
 .cv-service article {
   padding: 1rem;
   border-radius: 0.5rem;
-  background: var(--global-code-background-color);
+  background: var(--global-footer-bg-color);
 }
 
 .cv-service p {
